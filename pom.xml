@@ -24,24 +24,21 @@
 
     </dependencies>
          
-         <plugin>
-  <groupId>org.codehaus.mojo</groupId>
-  <artifactId>exec-maven-plugin</artifactId>
-  <version>1.2.1</version>
-  <executions>
-    <execution>
-      <goals>
-        <goal>java</goal>
-      </goals>
-    </execution>
-  </executions>
-  <configuration>
-    <mainClass>TelegramBot.PedroBot</mainClass>
-    <arguments>
-      <argument>foo</argument>
-      <argument>bar</argument>
-    </arguments>
-  </configuration>
+         <build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>TelegramBot.PedroBot</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </plugin>
 
 </project>
