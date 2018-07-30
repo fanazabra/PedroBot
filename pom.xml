@@ -2,8 +2,8 @@
 <project>
          
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.mycompany.app</groupId>
-    <artifactId>my-app</artifactId>
+    <groupId>TelegramBot</groupId>
+    <artifactId>TelegramBot</artifactId>
     <version>1</version>
     
 
@@ -23,5 +23,21 @@
     </dependency>
 
     </dependencies>
+         
+         <build>
+		<plugins>
+			<plugin>
+				<groupId>TelegramBot</groupId>
+				<artifactId>TelegramBot</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>TelegramBot.PedroBot</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>
