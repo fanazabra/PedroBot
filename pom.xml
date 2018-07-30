@@ -5,6 +5,9 @@
     <groupId>TelegramBot</groupId>
     <artifactId>TelegramBot</artifactId>
     <version>1</version>
+	
+    <packaging>jar</packaging>
+    <version>1.0-SNAPSHOT</version>
     
 
     <dependencies>
