@@ -36,7 +36,7 @@
     </execution>
   </executions>
   <configuration>
-    <mainClass>com.example.Main</mainClass>
+    <mainClass>PedroBot</mainClass>
     <arguments>
       <argument>foo</argument>
       <argument>bar</argument>
