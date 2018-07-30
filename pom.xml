@@ -27,8 +27,6 @@
          <build>
 		<plugins>
 			<plugin>
-				<groupId>TelegramBot</groupId>
-				<artifactId>TelegramBot</artifactId>
 				<configuration>
 					<archive>
 						<manifest>
