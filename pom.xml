@@ -25,20 +25,28 @@
 
     </dependencies>
          
-         <build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
-				<configuration>
-					<archive>
-						<manifest>
-							<mainClass>TelegramBot.PedroBot</mainClass>
-						</manifest>
-					</archive>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+    <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+          <artifactId>appassembler-maven-plugin</artifactId>
+          <version>1.1.1</version>
+          <configuration>
+            <assembleDirectory>target</assembleDirectory>
+            <programs>
+                <program>
+                    <mainClass>PedroBot</mainClass>
+                    <name>pedrobot</name>
+                </program>
+            </programs>
+          </configuration>
+          <executions>
+              <execution>
+                  <phase>package</phase><goals><goal>assemble</goal></goals>
+              </execution>
+          </executions>
+      </plugin>
+    </plugins>
+  </build>
 
 </project>
